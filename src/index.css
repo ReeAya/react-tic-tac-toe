@@ -49,7 +49,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -72,21 +72,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: rgba(251, 4, 123, 0.87);
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: rgba(251, 4, 123, 0.87);
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
-  font-size: 0.9rem;
+  color: rgba(251, 4, 123, 0.289) m;
   cursor: pointer;
   transition: color 0.2s;
   padding: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -94,7 +93,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: rgba(251, 4, 123, 0.87);
 }
 
 .player {
@@ -108,7 +107,7 @@ h1 {
   display: inline-block;
   width: 10rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: rgba(251, 4, 123, 0.87);
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -121,10 +120,10 @@ h1 {
   font: inherit;
   font-size: 1rem;
   width: 10rem;
-  border: none;
+  border: 1px solid rgba(251, 4, 123, 0.87);
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  /* background-color: rgba(251, 4, 123, 0.87); */
   text-align: center;
   text-transform: uppercase;
 }
@@ -132,7 +131,7 @@ h1 {
 .player-symbol {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: rgba(251, 4, 123, 0.87);
 }
 
 ol {
@@ -148,7 +147,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: rgba(251, 4, 123, 0.87);
   border: none;
   font-family: "Caprasimo", cursive;
   font-size: 4rem;
@@ -179,8 +178,8 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  background: rgba(241, 70, 178, 0.434);
+  color: rgba(251, 4, 123, 0.87);
   font-size: 5rem;
   cursor: pointer;
   font-family: "Caprasimo", cursive;
@@ -197,7 +196,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
+  background-color: rgba(251, 4, 123, 0.87);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
@@ -205,14 +204,14 @@ ol {
   font-family: "Caprasimo", cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: rgba(251, 4, 123, 0.87);
   margin: 0;
 }
 
 #game-over p {
   font-size: 2rem;
   text-align: center;
-  color: #e1dec7;
+  color: rgba(251, 4, 123, 0.87);
 }
 
 #game-over button {
@@ -220,25 +219,25 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid rgba(251, 4, 123, 0.87);
+  color: rgba(251, 4, 123, 0.87);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s, color 0.2s;
-  box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 8px rgba(251, 4, 123, 0.25);
 }
 
 #game-over button:hover {
-  background: #fcd256;
+  background: rgba(251, 4, 123, 0.87);
   color: #3f3b00;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(251, 4, 123, 0.87);
 }
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: rgba(251, 4, 123, 0.87);
   list-style: none;
   margin: 2rem auto;
   padding: 0;
@@ -252,13 +251,13 @@ ol {
 }
 
 #log li.highlighted {
-  background-color: #3f3b00;
+  background-color: rgba(251, 4, 123, 0.87);
   color: white;
 }
 
 #game-hints {
   text-align: center;
-  color: #46432f;
+  color: rgba(251, 4, 123, 0.87);
 }
 
 #game-hints h2 {
@@ -295,13 +294,13 @@ ol {
 
 @keyframes pulse-text {
   0% {
-    color: #e1dec7;
+    color: rgba(251, 4, 123, 0.25);
   }
   50% {
-    color: #9f9d83;
+    color: rgba(251, 4, 123, 0.87);
   }
   100% {
-    color: #e1dec7;
+    color: rgba(251, 4, 123, 0.25);
   }
 }
 
@@ -319,15 +318,15 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
+    border-color: rgba(251, 4, 123, 0.87);
+    box-shadow: 0 0 0 0 rgba(251, 4, 123, 0.25);
   }
   50% {
-    border-color: #f8c031;
+    border-color: rgba(251, 4, 123, 0.87);
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
   100% {
-    border-color: #f6e35a;
+    border-color: rgba(251, 4, 123, 0.87);
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
 }
